@@ -1,0 +1,23 @@
+import random
+import time
+
+
+response = input("(Type question or to stop type quit)\nWhat is your question?\n")
+time.sleep(5)
+print("Searching for an answer.")
+time.sleep(5)
+print("Please be patient")
+
+dot = 10
+for _ in range(dot):
+    time.sleep(.5)
+    print(".")
+
+time.sleep(1)
+    
+Eightball_answers = ["It is certain", "Outlook good", "You may rely on it","Ask again later", "Concentrate and ask again", "Reply hazy, try again", "My reply is no", "My sources say no"]
+if response == "quit":
+        print("Have A Good Day!")
+else:
+    print(random.choice(Eightball_answers), "\n")
+      
